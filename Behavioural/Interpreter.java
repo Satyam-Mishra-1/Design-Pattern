@@ -5,8 +5,6 @@ interface Expression {
     int interpret();
 }
 
-
-
 //  2. Create the TerminalExpression Classes
 class NumberExpression implements Expression {
     private int number;                     
@@ -22,11 +20,6 @@ class NumberExpression implements Expression {
 }
 
 
-
-
-
-
-
 //3. Create NonTerminalExpression Classes
 class AdditionExpression implements Expression {
     private Expression leftExpression;
@@ -37,7 +30,7 @@ class AdditionExpression implements Expression {
         this.rightExpression = rightExpression;
     }
 
-    @Override
+    @Override  
     public int interpret() {
         return leftExpression.interpret() + rightExpression.interpret();
     }
@@ -57,7 +50,6 @@ class SubtractionExpression implements Expression {
         return leftExpression.interpret() - rightExpression.interpret();
     }
 }
-
 
 
 //  5. Client Code to Test the Interpreter Pattern

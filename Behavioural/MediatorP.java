@@ -132,6 +132,7 @@ abstract class User{
 }
 
 
+
 class UserImpl extends User{
      
      public UserImpl(ChatMediator Medi,String name){

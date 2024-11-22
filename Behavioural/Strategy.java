@@ -62,9 +62,7 @@ class ShoppingCart {
 public class Strategy {
     public static void main(String[] args) {
 
-
         ShoppingCart cart = new ShoppingCart();
-        
         
         // Pay using Credit Card
         cart.setPaymentStrategy(new CreditCardPayment("John Doe", "123456789", "123", "12/25"));

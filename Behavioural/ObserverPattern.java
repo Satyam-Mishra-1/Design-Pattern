@@ -9,8 +9,7 @@ interface Observer {
 }
 
 
-// Step 2: Create the Subject Class
-
+// Step 2: Create the Subject Class.
 // Here we can also create an Subject interface as well .
 
 class Subject {
